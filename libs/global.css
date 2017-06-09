@@ -1,0 +1,84 @@
+/*导航开始*/
+        .header {
+            height: 60px;
+            width: 100%;
+            position:fixed;
+            top:0;
+            z-index: 999;
+            background: #fff
+        }
+        .header .container {
+            width:1150px;
+            margin: 0 auto;
+            position: relative;
+            height: 100%;
+
+        }
+       .cle:after{
+            content:" ";        
+            display:block;        
+            clear:both;        
+        }
+       .logoleft {
+            float: left;
+           
+        }
+        .logoleft img {
+            width: 244px;
+            height: 60px;
+        }
+        .navs {
+            float: right;
+        }
+        .navs ul li {
+            float: left;
+            display: block;
+            height: 60px;        
+            text-align: center;
+
+            background-color: #fff;
+      
+        }  
+        .navs a {
+            text-decoration: none;
+            color:#444444;
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 20px;
+            font-size: 14px;
+
+        }
+        .active {
+            background: url(../imgs/blue_color.png) no-repeat !important;
+            background-position: center !important;
+        }
+        .active a {
+            color:#ffffff !important;
+        }
+
+        .m_active {
+            background: url(../imgs/blue_color.png) no-repeat !important;
+            background-position: center !important;
+        }
+        .m_active a{
+            color:#ffffff !important;
+        }
+    /*导航结束*/
+
+   /*尾部*/
+
+   .footer {
+    background: #ebebeb;
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+   }
+   /*尾部*/

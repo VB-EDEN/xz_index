@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="产品中心—修正药业亮瞳呵护微商事业部" />
+    <meta name="keywords" content="产品中心—修正药业亮瞳呵护微商事业部" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="mobile-agent" content="format=xhtml;url=/m/index.php">
+
+    <link rel="stylesheet" href="../libs/normalize.css">
+    <link rel="stylesheet" href="../libs/swiper.min.css">
+     <link rel="stylesheet" href="../libs/global.css">
+    <script type="text/javascript" src="../libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../libs/swiper.min.js"></script>
+
+
+    <style>
+
+    body {
+        font-family:"Microsoft YaHei";
+        padding-top: 60px;
+        background: #f0f0f0;
+    }
+       
+      .back_img {
+        background-image: url(../imgs/banner.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width:1920px ;
+        height: 300px;
+        position: relative;
+        left: 50%;
+        margin-left: -960px;
+        background-position: center 60px;
+    }
+     /*content*/
+    .content {
+        width: 1150px;
+        margin:0 auto;
+        position: relative;
+        margin-top: 30px;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */   
+    }
+    .menu{
+        float: left;
+        width: 245px;
+    }
+    .info {
+        float: right;
+        width: 880px;
+    
+    }
+    .menu>div {
+        width: 245px;
+        height: 307px;
+        background: #fff;
+        position: relative;
+        font-size: 14px;
+     
+    }
+    .pro_a {
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+    .pro_b {
+        text-align: center;
+    }
+    .pro_a img,.pro_b img{
+        margin-top: 20px;
+    }
+    .pro_name {
+        height: 56px;
+        text-align: center;
+        line-height: 56px;
+        box-shadow: 0px 1px 6px #d2d0d0;
+    }
+
+    .info>div {
+        display: none;
+    }
+        
+
+
+ .light {
+      background: url(../imgs/blue.png) no-repeat !important;
+      background-position: center!important;
+      color: #fff!important;
+ }
+.flash_on {
+    animation: flash_on ease 0.8s !important;
+    -webkit-animation: flash_on ease 0.8s !important;
+    display: block !important;
+
+ }
+@-webkit-keyframes flash_on {
+    0% {
+        transform: translateY(50%);
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+} 
+@keyframes flash_on {
+    0% {
+        transform: translateY(50%);
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+} 
+/*内容结束*/
+
+    </style>
+</head>
+<body>
+
+    <!-- 头部 -->
+<div class="header fixed">
+    <div class="container  cle">
+        <div class="logoleft">
+            <img class="logo" src="../imgs/logo.png" alt="修正药业亮瞳呵护微商事业部">
+        </div>
+        <div class="navs">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="javascript:void(0);">产品中心</a></li>
+                <li><a href="javascript:void(0);">代理加盟</a></li>
+                <li><a href="inquiry.html">查询服务</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+<!-- 头部 -->
+
+<!-- banner图片 -->
+<div class="back_img"></div>
+<!-- banner图片 -->
+
+<div class="content cle">
+    <div class="menu">
+        <div class="pro_a">
+            <div class="pro_name light">
+                蓝莓叶黄素β-胡萝卜素软胶囊
+            </div>  
+            <img src="../imgs/pro_1.jpg" alt="蓝莓叶黄素β-胡萝卜素软胶囊">
+            
+        </div>
+        <div class="pro_b">
+            <div class="pro_name ">
+                亮瞳呵护眼部护理液
+            </div>  
+            <img src="../imgs/pro_2.jpg" alt="亮瞳呵护眼部护理液">
+        </div>
+    </div>
+    <div class="info">
+        <div class="box1 flash_on">
+      <img src="../imgs/pro1.jpg" alt="蓝莓叶黄素β-胡萝卜素软胶囊">
+     
+
+        </div>
+        <div class="box2">
+
+         
+        </div>
+    </div>    
+</div>
+
+<!-- 尾部开始 -->
+<div class="footer">
+    <span>Copyright © 2017-2020 修正药业亮瞳呵护微商事业部 版权所有</span>
+</div>    
+<!-- 尾部结束 -->
+
+<script type="text/javascript">
+
+
+$(function(){
+  
+// 导航栏
+  $(".navs li").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+  })
+
+  $(".navs li").hover(function(){
+    $(this).addClass("m_active")
+  },function(){
+    $(this).removeClass("m_active")
+  })
+  // 导航栏
+// 内容菜单栏开始
+ $(".menu>div").click(function(){
+    $(this).find(".pro_name").addClass("light").end().siblings().find(".pro_name").removeClass("light");
+    var index =$(".menu>div").index(this);
+    $(".info>div").eq(index).addClass("flash_on").siblings().removeClass("flash_on");
+
+ })
+// 内容菜单栏结束
+})
+
+  
+   
+</script>
+</body>
+</html>
